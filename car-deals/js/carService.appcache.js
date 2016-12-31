@@ -79,7 +79,7 @@ if (!('serviceWorker' in navigator)) {
     }
 
     function preCacheDetailsTemplate() {
-      fetch('templates/car-details.html').then(function(response) {
+      fetch('templates.appstore/car-details.html').then(function(response) {
         return response.text();
       }).then(function(data) {
         clientStorage.setDetailsTemplate(data);
